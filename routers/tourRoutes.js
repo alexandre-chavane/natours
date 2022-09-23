@@ -10,9 +10,9 @@ const router = express.Router();
 // If not send 400 (Bad request)
 // Add it to the post handler stack
 // router.param('name','price')
-
+router.route('/tour-stats').get(tourController.getTourStats);
 // router.route('/').post(tourController.checkBody, tourController.createTour).get(tourController.getAllTours);
-router.route('/top-5-cheap').get(tourController.aliasTopTours, tourController.getAllTours)
+router.route('/top-5-cheap').get(tourController.aliasTopTours, tourController.getAllTours);
 
 router.route('/').post(tourController.createTour).get(tourController.getAllTours);
 router
