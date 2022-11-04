@@ -4,7 +4,8 @@
   "description": "Learning express, mongodb and nodejs",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Alexandre",
   "license": "ISC",
